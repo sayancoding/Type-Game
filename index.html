@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="main.css">
+    <title>TypeGame</title>
+</head>
+<body>
+    <header class="header-title">
+        <h1>TYPE-GAME</h1>
+    </header>
+    <div class="container">
+        <div class="row mt-12">
+            <div class="col-md-12 mx-auto">
+                <p class="lead">
+                    "Type the given word within <span class="text-sucess" id="seconds">5</span> seconds"
+                </p>
+                <h1 class="display-2 md-5" id="current-word"></h1>
+                <input type="text" id="word-input" placeholder="Start typing..." autofocus>
+                <h4 id="message"> </h4>
+
+                <div class="row mt-5" style="font-size: 25px;" >
+                    <div class="col-md-6">
+                        Time Left: <span id="time">0</span>
+                    </div>
+                    <div class="col-md-6">
+                        Score: <span id="score">0</span>
+                    </div>
+                </div>
+            <div class="row mt-5">
+                <div class="col-md-12">
+                    <div class="card card-body bg-secondary text-white">
+                        <h4 class="text-sucess">Instructions</h4>
+                        <p>Type Each word within seconds to score. After game over type recent word to reset.</p>
+                    </div>
+                </div>
+            </div>
+
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
